@@ -1,0 +1,81 @@
+#01_unit-converter.py
+
+centimeter = 350
+meter = centimeter / 100
+
+print (str(centimeter) + " centimeter in meter is: " + str(meter) + " meter.")
+
+
+#------------------------------------------------------------------------------
+#02_getting-input.py
+
+data1 = input("Enter a number : ")
+
+print ("Number received is : " + data1 )
+
+
+#FIX_ME (the line below)
+larger_data1 = int(data1) + 1
+
+print ("One number larger than the number received is : " + str(larger_data1) )
+
+
+#------------------------------------------------------------------------------
+#03_decision-making.py
+
+person = 23
+
+if person >= 21:
+    print ("This person is an adult")
+else:
+    print ("This person is a minor")
+
+
+
+
+vip = "Jack"
+
+if vip == "Jack":
+    print ("Welcome, CEO")
+elif vip == "Mary":
+    print ("Welcome, CFO")
+else:
+    print ("Unrecognised person")
+    
+    
+#------------------------------------------------------------------------------
+#04_loops_1.py
+
+#"Hello world" will be printed 5 times
+
+i = 0
+while i < 5:
+    print ("Hello world")
+    
+    i = i + 1
+
+
+    
+#------------------------------------------------------------------------------
+#05_loops_2.py
+
+#"Hello world" will be printed 5 times
+
+for i in range(5, 10):
+    print ("Hello world")
+
+
+#------------------------------------------------------------------------------
+#06_loops_3.py
+
+#Only M, y, o, i from "Mary Poppins" will be printed
+
+name = "Mary Poppins"
+
+i = 0
+while i < len(name):
+    
+    print (name[i])
+    
+    i = i + 3
+    
